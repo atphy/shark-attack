@@ -2,13 +2,24 @@ import React from 'react';
 
 import './MainPage.scss';
 
-import LiveStudent from './LiveStudent/LiveStudent';
-// import Sharktank from './Sharktank/Sharktank';
-// import GraveStone from './GraveStone/GraveStone';
+import studentData from '../../helpers/data/studentData';
+
+import Sharktank from './Sharktank/Sharktank';
 import Graveyard from './Graveyard/Graveyard';
 
 class MainPage extends React.Component {
+  state = {
+    livingStudents: [],
+  }
+
+  componentDidMount() {
+    const livingStudents = studentData.livingStudents();
+    this.setState({ livingStudents });
+  }
+
   render() {
+    const { livingStudents } = this.state;
+
     return (
 
     <div className="main-page">
@@ -19,9 +30,8 @@ class MainPage extends React.Component {
       </div>
 
       <div className="students-container">
-        <LiveStudent className="live-student" />
+        <Sharktank students={livingStudents} />
         <Graveyard className="graveyard" />
-      <h2>hello</h2>
       </div>
 
     </div>
