@@ -1,7 +1,9 @@
+@import '../../styles/variables'; 
+
 body {
     display: grid;
-    background-image: url('https://i.pinimg.com/originals/1e/fb/5c/1efb5cac68670c077d8c7ddfe3829a4a.gif');
-    background-color: #a0e6eb;
+    background-image: url('./images/intro-page-bg.gif');
+    background-color: black;
     height: 500px;
     background-position: center;
     background-size: cover;
@@ -12,7 +14,7 @@ body {
       align-items: center;
       font-family: 'Quantico', sans-serif;
       align-items: center;
-      margin-top: 50px;
+      margin-top: 100px;
   }
 
   .intro-page-paragraph {
@@ -37,13 +39,13 @@ body {
   }
 
 .intro-button:hover:active {
-    background-color: red;
+    background-color: $bloodRed;
     color: black;
-    border: solid 1px red;
+    border: solid 1px $bloodRed;
   }
 
   .intro-button:focus {
-    background-color: red;
+    background-color: $bloodRed;
     color: black;
-    border: solid 1px red;
+    border: solid 1px $bloodRed;
   }
