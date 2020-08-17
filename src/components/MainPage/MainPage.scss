@@ -1,0 +1,60 @@
+body {
+  display: inline-block;
+    background-image: url('https://24.media.tumblr.com/f7a346507344020b001b73bd1388ef9d/tumblr_n0h01bEQEM1sns7veo1_500.gif');
+    background-color: black;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 135%;
+    background-position-y: center;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Quantico', sans-serif;
+  }
+
+.main-page {
+  display: flex;
+  margin-top: 500px;
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  .shark-attack-button {
+    height: 100%;
+    width: 25%;
+    border: solid white 3px;
+    border-radius: 10px;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+    margin-right: 0;
+    background-color: black;
+    .dead-shark {
+      display: none;
+      height: 100%;
+      margin-left: 50px;
+      border-radius: 10px;
+    }
+    .alive-ship {
+      height: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  }
+  .students-container {
+    float: left;
+    margin-left: 2px;
+    height: 100%;
+    width: 75%;
+    border: solid white 3px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    }
+  }
+
+.shark-attack-button:hover + 
+  .students-container {
+    display: inline-block;
+  }
+  .dead-shark{
+    display: inline-block;
+  }

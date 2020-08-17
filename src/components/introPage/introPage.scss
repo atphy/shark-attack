@@ -1,0 +1,51 @@
+@import '../../styles/variables'; 
+
+body {
+    display: grid;
+    background-image: url('./images/intro-page-bg.gif');
+    background-color: black;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .intro-page-info {
+      justify-items: center;
+      align-items: center;
+      font-family: 'Quantico', sans-serif;
+      align-items: center;
+      margin-top: 100px;
+  }
+
+  .intro-page-paragraph {
+      margin: 20px 500px;
+      padding: 20px 20px;
+      text-align: center;
+      color: white;
+  }
+
+  .intro-button {
+      background-color: black;
+      color: white;
+      border: solid 1px white;
+      margin: 20px 650px;
+      padding: 20px 20px;
+  }
+
+  .intro-button:hover {
+    background-color: white;
+    color: black;
+    border: solid 1px white;
+  }
+
+.intro-button:hover:active {
+    background-color: $bloodRed;
+    color: black;
+    border: solid 1px $bloodRed;
+  }
+
+  .intro-button:focus {
+    background-color: $bloodRed;
+    color: black;
+    border: solid 1px $bloodRed;
+  }
