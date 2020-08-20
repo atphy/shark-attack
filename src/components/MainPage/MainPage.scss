@@ -48,15 +48,14 @@ body {
     border-radius: 10px;
     background-color: black;
     color: white;
-    padding: 5px;
+    padding: 20px;
     }
   }
 
-.shark-attack-button:hover ~ 
-  .students-container .shark-tank {
+.shark-attack-button:hover ~ .students-container .shark-tank {
     display: none;
   }
-  .students-container .graveyard {
+  .shark-attack-button:hover ~  .students-container .graveyard {
     display: flex;
   }
 

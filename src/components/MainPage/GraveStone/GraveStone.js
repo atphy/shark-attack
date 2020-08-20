@@ -9,7 +9,7 @@ class GraveStone extends React.Component {
   render() {
     const { student } = this.props;
     return (
-        <h6 className="single-dead"> {student.firstName} {student.lastName} &nbsp; &nbsp; </h6>
+        <h6 className="single-dead"> {student.firstName} {student.lastName} &nbsp; &nbsp; &nbsp; &nbsp; </h6>
     );
   }
 }
