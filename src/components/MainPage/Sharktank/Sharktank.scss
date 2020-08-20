@@ -1,8 +1,6 @@
 .shark-tank {
-    margin-top: 320px;
-    margin-left: 400px;
-    height: 200px;
-    position: absolute;
-    width: 100%;
-
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    text-align: center;
 }

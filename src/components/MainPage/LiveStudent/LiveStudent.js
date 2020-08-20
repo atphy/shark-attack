@@ -1,12 +1,17 @@
 import React from 'react';
+import theShapeOfTheWaters from '../../../helpers/props/theShapeOfTheseWaters.js/theShapeOfTheseWater';
 
 import './LiveStudent.scss';
 
 class LiveStudent extends React.Component {
+  static propTypes = {
+    student: theShapeOfTheWaters.studentShape,
+  }
+
   render() {
+    const { student } = this.props;
     return (
-      <div className="live-students">
-      </div>
+        <h6 className="single-live"> {student.firstName} {student.lastName} &nbsp; &nbsp; &nbsp; &nbsp; </h6>
     );
   }
 }
