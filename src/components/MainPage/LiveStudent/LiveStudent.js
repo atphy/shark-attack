@@ -11,7 +11,7 @@ class LiveStudent extends React.Component {
   render() {
     const { student } = this.props;
     return (
-        <h6 className="single-live">{student.firstName} {student.lastName}</h6>
+        <h6 className="single-live"> {student.firstName} {student.lastName} &nbsp; &nbsp; </h6>
     );
   }
 }
