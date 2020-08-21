@@ -5,7 +5,7 @@ body {
     height: 500px;
     background-repeat: no-repeat;
     background-size: 100% 135%;
-    background-position-y: center;
+    background-position: center;
     overflow: hidden;
     margin: 0;
     font-family: 'Quantico', sans-serif;
@@ -30,13 +30,13 @@ body {
     .dead-shark {
       display: none;
       height: 100%;
-      margin-left: 50px;
-      border-radius: 10px;
+      width: 100%;
+      background-image: url(https://i.gifer.com/JHQ.gif);
+      background-position: center;
     }
     .alive-ship {
       height: 100%;
-      border-radius: 10px;
-      margin-top: 20px;
+      width: 100%;
     }
   }
   .students-container {
